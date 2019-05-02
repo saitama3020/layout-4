@@ -23,7 +23,18 @@
             <a class="nav-link" href="contact.html">Contact</a>
         </li>
     </ul>
-    <form class="form-inline pull-xs-right">
+    <form class="form-inline">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Mike Smith">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="mike@gmail.com">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <form class="form-inline float-xs-right">
         <input class="form-control" type="text" placeholder="Search">
         <button class="btn btn-primary" type="submit">Search</button>
     </form>
@@ -39,12 +50,34 @@
     <!-- body //-->
     <div class="row mt-3">
         <div class="col-md-12">
-            <p>Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include
-            documentation, but do include our build system and readme.Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include
-            documentation, but do include our build system and readme.Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include
-            documentation, but do include our build system and readme.Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include
-            documentation, but do include our build system and readme.Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include
-            documentation, but do include our build system and readme.</p>
+           <form>
+               <fieldset class="form-group">
+                   <label>Email</label>
+                   <input type="email" class="form-control" placeholder="Enter email">
+                   <small class="text-muted">We'll never share your email with anyone else.</small>
+               </fieldset>
+               <fieldset class="form-group">
+                   <label>Name</label>
+                   <input type="text" class="form-control" placeholder="Name">
+               </fieldset>
+               <fieldset class="form-group">
+                    <label>Message</label>
+                    <textarea class="form-control" rows="3"></textarea>
+               </fieldset>
+               <button type="submit" class="btn btn-primary">Submit</button>
+           </form>
+        </div>
+    </div>
+</div>
+        
+        <div class="container">
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <p>View composers are callbacks or class methods that are called when a view is rendered. If you have data that you want to
+            be bound to a view each time that view is rendered, a view composer can help you organize that logic into a single
+            location.View composers are callbacks or class methods that are called when a view is rendered. If you have data that you want to
+            be bound to a view each time that view is rendered, a view composer can help you organize that logic into a single
+            location.</p>
         </div>
     </div>
 </div>
@@ -57,15 +90,6 @@
     </div>
 </div>
 
-        <div class="row mt-3">
-    <div class="col-md-12">
-        <p>View composers are callbacks or class methods that are called when a view is rendered. If you have data that you want to
-        be bound to a view each time that view is rendered, a view composer can help you organize that logic into a single
-        location.View composers are callbacks or class methods that are called when a view is rendered. If you have data that you want to
-        be bound to a view each time that view is rendered, a view composer can help you organize that logic into a single
-        location.</p>
-    </div>
-</div>
 
         <script src="https://code.jquery.com/jquery-3.4.0.slim.js"
             integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ=" crossorigin="anonymous"></script>
