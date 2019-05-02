@@ -100,3 +100,19 @@
 <div class="collapse" id="collapse-link">
     <p class="alert alert-warning">This is some collapsable text.</p>
 </div>
+
+<div id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headerOne">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                    href="#sectionOne" aria-expanded="true" aria-controls="setionOne">
+                Section #1</a>
+            </h4>
+        </div>
+        <div id="sectionOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headerOne">
+            This is the first section.
+        </div>
+        
+    </div>
+</div>
