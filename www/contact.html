@@ -7,10 +7,11 @@
 
         <title>Contact | Learning Bootstrap 4</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
     </head>
     <body>
         
-        <nav class="navbar navbar-light navbar-toggleable-md bg-faded">
+        <nav class="navbar navbar-light navbar-expand-md bg-faded">
     <a class="navbar-brand" href="#">Learning Bootstrap 4</a>
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -23,17 +24,6 @@
             <a class="nav-link" href="contact.html">Contact</a>
         </li>
     </ul>
-    <form class="form-inline">
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" placeholder="Mike Smith">
-        </div>
-        <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" placeholder="mike@gmail.com">
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
     <form class="form-inline float-xs-right">
         <input class="form-control" type="text" placeholder="Search">
         <button class="btn btn-primary" type="submit">Search</button>
@@ -49,7 +39,7 @@
     </div>
     <!-- body //-->
     <div class="row mt-3">
-        <div class="col-md-12">
+        <div class="col-md-8">
            <form>
                <fieldset class="form-group">
                    <label>Email</label>
@@ -66,6 +56,23 @@
                </fieldset>
                <button type="submit" class="btn btn-primary">Submit</button>
            </form>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Address &amp; Phone
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li>Mike Smith</li>
+                        <li>1234 Street Name</li>
+                        <li>Vancouver, BC</li>
+                        <li>Canada V7V 1V1</li>
+                        <li>604.123.1234</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -91,11 +98,19 @@
 </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.4.0.slim.js"
-            integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+            <script src="js/tether.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script>
+            $("#tooltip-link").tooltip();
+            $("#tooltip-button").tooltip();
+            $('#popover-link').popover();
+            $('#popover-button').popover();
+        </script>
     </body>
 </html>

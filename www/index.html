@@ -7,10 +7,11 @@
 
         <title>Home | Learning Bootstrap 4</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
     </head>
     <body>
         
-        <nav class="navbar navbar-light navbar-toggleable-md bg-faded">
+        <nav class="navbar navbar-light navbar-expand-md bg-faded">
     <a class="navbar-brand" href="#">Learning Bootstrap 4</a>
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -23,17 +24,6 @@
             <a class="nav-link" href="contact.html">Contact</a>
         </li>
     </ul>
-    <form class="form-inline">
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" placeholder="Mike Smith">
-        </div>
-        <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" placeholder="mike@gmail.com">
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
     <form class="form-inline float-xs-right">
         <input class="form-control" type="text" placeholder="Search">
         <button class="btn btn-primary" type="submit">Search</button>
@@ -41,7 +31,6 @@
 </nav>
         
         <div class="container">
-
     <div class="row mt-3">
         <div class="col-md-12">
             <h1 class="display-4">Blog</h1>
@@ -49,25 +38,125 @@
     </div>
     <div class="row mt-3">
         <div class="col-md-8">
-            <p>Green Park is a London Underground station on the north side of Green Park, with entrances on both sides of Piccadilly.
-            It is in fare zone 1 and is a busy interchange between the Jubilee, Piccadilly and Victoria lines, used by over 39
-            million passengers in 2017. The station was opened on 15 December 1906 by the Great Northern, Piccadilly and Brompton
-            Railway and was originally named Dover Street.</p>
+            <div class="card">
+                <img class="card-img-top img-fluid" src="img/download.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Post title</h4>
+                    <p><small>Posted by <a href="#">Admin</a> on January 1, 2016 in <a href="#">Category</a></small></p>
+                    <p><a href="#" id="tooltip-link" data-toggle="tooltip" data-placement="top" title="This is a tooltip!">Pallentesque</a> habitant morbi tristique...</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top img-fluid" src="img/download.jpg" alt="Card image cap"> -->
+                <div class="card-body">
+                    <h4 class="card-title">Post title <span class="badge badge-success">Updated</span></h4>
+                    <p><small>Posted by <a href="#">Admin</a> on January 1, 2016 in <a href="#">Category</a></small></p>
+                    <p class="card-text">
+                        <a href="#" onclick="preventDefault()" title="popover" data-placement="top" id="popover-link" dota-toggle="popover" data-content="This is the content of my popover which can be longer than a tooltip">Some quick example</a>
+                        text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid" src="img/download.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Post title <span class="badge badge-success">Updated</span></h4>
+                    <p><small>Posted by <a href="#">Admin</a> on January 1, 2016 in <a href="#">Category</a></small></p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid" src="img/download.jpg" alt="Card cap image">
+                <div class="card-body">
+                    <h4 class="card-title">Post title</h4>
+                    <p><small>Posted by <a href="#">Admin</a> on January 1, 2016 in <a href="#">Category</a></small></p>
+                    <p class="card-text">Pellentesque habitant morbi tristic senectus...</p>
+                    <a class="btn btn-primary" href="#">Read More</a>
+                </div>
+            </div>
+            <nav aria-label="Posts navigation">
+                <ul class="pagination mt-3 justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Older Posts</a></li>
+                    <li class="page-item disabled"><a tabindex="-1" class="page-link" href="#">Newer Posts</a></li>
+                </ul>
+            </nav>
         </div>
+        <!-- sidebar //-->
         <div class="col-md-4 hidden-md-down">
-            <p>Green Park is a London Underground station on the north side of Green Park, with entrances on both sides of Piccadilly.
-            It is in fare zone 1 and is a busy interchange between the Jubilee, Piccadilly and Victoria lines, used by over 39
-            million passengers in 2017. The station was opened on 15 December 1906 by the Great Northern, Piccadilly and Brompton
-            Railway and was originally named Dover Street.</p>
+            <div class="card card-body">
+                <h5 class="card-title">Recent Posts</h5>
+                <div class="list-group">
+
+                    <button type="button" class="list-group-item">Cras justo odio</button>
+                    <button type="button" class="list-group-item">Dapibus ac facilisisin</button>
+                    <button type="button" class="list-group-item">Morbi leo risus</button>
+                    <button type="button" class="list-group-item">Porta ac consectetur</button>
+                    <button type="button" class="list-group-item">Vestibulum at eros</button>
+                </div>
+                <div class="mt-1"><a href="#">View More</a></div>
+            </div>
+            <div class="card card-body">
+                <h5 class="card-title">Archives</h5>
+                <div class="list-group">
+                    <button type="button" class="list-group-item">Cras justo odio</button>
+                    <button type="button" class="list-group-item">Dapisbus ac facilisisin</button>
+                    <button type="button" class="list-group-item">Morbi leo risus</button>
+                    <button type="button" class="list-group-item">Porta ac cosecteturac</button>
+                    <button type="button" class="list-group-item">Vestibulum at eros</button>
+                </div>
+                <div class="mt-1"><a href="#">View More</a></div>
+            </div>
+            <div class="card card-body">
+                <h5 class="card-title">Categories</h5>
+                <div class="list-group">
+                    <button type="button" class="list-group-item">Cras justo odio</button>
+                    <button type="button" class="list-group-item">Dapibus ac facilisis</button>
+                    <button type="button" class="list-group-item">Morbi leo risus</button>
+                    <button type="button" class="list-group-item">Porta ac consecteturac</button>
+                    <button type="button" class="list-group-item">Vestibulum at eros</button>
+                </div>
+                <div class="mt-1"><a href="#">View More</a></div>
+            </div>
+            
         </div>
+
     </div>
-    <div class="row mt-3">
-        <div class="col-md-12">
-            Green Park is a London Underground station on the north side of Green Park, with entrances on both sides of Piccadilly.
-            It is in fare zone 1 and is a busy interchange between the Jubilee, Piccadilly and Victoria lines, used by over 39
-            million passengers in 2017. The station was opened on 15 December 1906 by the Great Northern, Piccadilly and Brompton
-            Railway and was originally named Dover Street.
+</div>
+<div id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headerOne">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#sectionOne" aria-expanded="true" aria-controls="setionOne">
+                Section #1</a>
+            </h4>
         </div>
+        <div id="sectionOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headerOne">
+            This is the first section.
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headerTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#sectionTwo" aria-expanded="false" aria-controls="sectionTwo">Section #2</a>
+                </h4>
+            </div>
+        </div>  
+        <div id="sectionTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headerTwo">
+            This is the second section.
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headerThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#sectionThree" href="#sectionThree" aria-expanded="false" aria-controls="sectionThree">
+                        Section #3
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div id="sectionThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sectionThree">This is the third section.</div>      
     </div>
 </div>
         
@@ -92,11 +181,19 @@
 </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.4.0.slim.js"
-            integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+            <script src="js/tether.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script>
+            $("#tooltip-link").tooltip();
+            $("#tooltip-button").tooltip();
+            $('#popover-link').popover();
+            $('#popover-button').popover();
+        </script>
     </body>
 </html>
